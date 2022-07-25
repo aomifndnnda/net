@@ -432,12 +432,12 @@ Utils.getPlayerBody = function(player)
 
 clearCookies = function ()
 {
-    Cookies.remove("AfterBurner");
+    Cookies.remove("Afterburner");
 }
 
 Utils.saveStates = function ()
 {
-    Cookies.set("AfterBurner", JSON.stringify({
+    Cookies.set("Afterburner", JSON.stringify({
         airBreak,
         boxTeleport,
         clickerData,
@@ -3550,4 +3550,4 @@ function mainEvent(time)
 }
 
 Utils.getStates(); setInterval(Utils.saveStates, 5000); requestAnimationFrame(mainEvent);
-alert("special for u");
+alert(<3);
