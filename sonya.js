@@ -432,12 +432,12 @@ Utils.getPlayerBody = function(player)
 
 clearCookies = function ()
 {
-    Cookies.remove("Afterburner");
+    Cookies.remove("AfterBurner");
 }
 
 Utils.saveStates = function ()
 {
-    Cookies.set("Afterburner", JSON.stringify({
+    Cookies.set("AfterBurner", JSON.stringify({
         airBreak,
         boxTeleport,
         clickerData,
@@ -3123,7 +3123,7 @@ CheatMenu.draw = function (time)
     ImGui.NewFrame();
 
     ImGui.SetNextWindowSize(new ImGui.ImVec2(650, 370), ImGui.Cond.FirstUseEver);
-    ImGui.Begin("Afterburner", null, ImGui.WindowFlags.NoCollapse | ImGui.WindowFlags.NoResize);
+    ImGui.Begin("Sonya", null, ImGui.WindowFlags.NoCollapse | ImGui.WindowFlags.NoResize);
 
     if (ImGui.BeginTabBar("##tabbar", ImGui.TabBarFlags.None))
     {
