@@ -3550,4 +3550,3 @@ function mainEvent(time)
 }
 
 Utils.getStates(); setInterval(Utils.saveStates, 5000); requestAnimationFrame(mainEvent);
-alert("<3");
